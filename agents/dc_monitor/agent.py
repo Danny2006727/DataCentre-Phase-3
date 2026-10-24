@@ -5,7 +5,7 @@ from google.adk.agents import Agent
 from .tools import get_resource_usage, list_devices, ping_test, run_check
 
 # Set GEMINI_MODEL in .env to use a different Gemini model.
-MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 
 root_agent = Agent(
     name="dc_monitor",
